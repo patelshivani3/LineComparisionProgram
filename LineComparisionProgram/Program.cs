@@ -34,8 +34,6 @@ namespace LineComparisionProgram
             double firstLineLength = Math.Sqrt(X + Y);
             Console.WriteLine("Length Of First Line is :" + firstLineLength);
             
-            
-            
             double x = Math.Pow((X4 - X3), 2);
             double y = Math.Pow((Y4 - Y3), 2);
             double secondLineLength = Math.Sqrt(x + y);

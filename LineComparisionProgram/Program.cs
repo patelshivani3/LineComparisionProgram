@@ -25,6 +25,10 @@ namespace LineComparisionProgram
             var X2 = Convert.ToDouble(Console.ReadLine());
             var Y2 = Convert.ToDouble(Console.ReadLine());
 
+            double firstLineLength = Math.Sqrt(Math.Pow((X2 - X1), 2) + Math.Pow((Y2 - Y1), 2));
+            Console.WriteLine("Length Of First Line is :" + firstLineLength);
+            
+            //UC2 second line
             Console.WriteLine("Please Enter X3 & Y3 Co-Ordinates:");
             var X3 = Convert.ToDouble(Console.ReadLine());
             var Y3 = Convert.ToDouble(Console.ReadLine());
@@ -33,15 +37,13 @@ namespace LineComparisionProgram
             var X4 = Convert.ToDouble(Console.ReadLine());
             var Y4 = Convert.ToDouble(Console.ReadLine());
 
-            double firstLineLength = Math.Sqrt(Math.Pow((X2 - X1), 2) + Math.Pow((Y2 - Y1), 2));
-            Console.WriteLine("Length Of First Line is :" + firstLineLength);
-
             double secondLineLength = Math.Sqrt(Math.Pow((X4 - X3), 2) + Math.Pow((Y4 - Y3), 2));
             Console.WriteLine("Length Of Second Line is :" + secondLineLength);
-
+            
+            //UC4 Comparision using CompareTo Method
             int compare = firstLineLength.CompareTo(secondLineLength);
             Console.WriteLine("Comparision is :"+compare);
-            
+            // UC3 Equality of lines
             if (compare == 0)
             {
                 Console.WriteLine("Lines are Equal");
